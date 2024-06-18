@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Form Handling</title>
+  </head>
+  <body>
+    <div class="main-bg">
+      <form class="form" id="formEl">
+        <label class="label">Roll number</label>
+        <input
+          type="text"
+          placeholder="Enter Roll number"
+          required
+          id="rollNumberInput"
+        />
+        <label class="label">Student Name</label>
+        <input
+          type="text"
+          placeholder="Enter Student Name"
+          required
+          id="studentNameInput"
+        />
+        <label class="label">Email</label>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          required
+          id="emailInput"
+        />
+        <select id="year">
+          <option>I</option>
+          <option>II</option>
+          <option>III</option>
+          <option>IV</option>
+        </select>
+        <select id="branch">
+          <option>CSE</option>
+          <option>ECE</option>
+          <option>EEE</option>
+          <option>MECH</option>
+          <option>CIVIL</option>
+        </select>
+        <button class="submit-button" type="submit" id="submitButton">
+          Submit
+        </button>
+        <p class="error-msg" id="errorMsg"></p>
+      </form>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
